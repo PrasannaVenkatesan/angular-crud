@@ -1,0 +1,31 @@
+<div ng-app="staffapp" ng-controller="staffController"> <span><h2>Staff Details</h2></span><span style="float:right"> <button id="add" class="btn glyphicon glyphicon-plus" onClick="location.href='#/create'" </button>
+ <!-- <button id="update" value = "update"onClick="location.href='#/update'" >Update</button> -->
+</span></div>
+        <!--<h2>Employee Details</h2> <span style="float:right"><a href="#/create">Create Employee</a></span>-->
+         <table style="width:100%">
+            <thead>
+                <tr>
+                    
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Subject</th>
+                    <th>Age</th>
+                 
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="hero in Staffs">
+                    <td>{{hero.id}}</td>
+                    <td>{{hero.name}}</td>
+                    <td>{{hero.depart}}</td>
+                    <td>{{hero.subject}}</td>
+                    <td>{{hero.age}}</td>
+                    <td><button ng-click="editUser(hero.id)" >edit</button></td>
+                  <!--  <td> <button ng-click="edit(hero.id)" >Update</button></td> -->
+              <!--    <td> <a href="edit(hero.id)">edit</a></td> -->
+                </tr>
+            </tbody>
+        </table> 
+      
+    </div>

@@ -1,0 +1,8 @@
+ {
+  "proxy":"http://10.100.1.124:3128",
+  "https-proxy" :"http://10.100.1.124:3128",
+  "strict-ssl":false,
+
+
+  "directory": "app/bower_components"
+}
